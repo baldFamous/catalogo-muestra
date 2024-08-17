@@ -6,6 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Catalogo XXXX",
   description: "Catalogo de productos de la tienda XXXX",
+  icon: "/favicon.ico",
 };
 
 export default function RootLayout({ children }) {

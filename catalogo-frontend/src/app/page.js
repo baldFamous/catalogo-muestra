@@ -8,8 +8,10 @@ export default function Home() {
     <div className="pageLayoutStyle">
       <FilterSide/>
       <div className="productLayoutStyle">
-        <h1>Product Catalog</h1>
-        <p>Browse our wide selection of products</p>
+        <div className="header">
+          <h1>Catalogo XXXX</h1>
+          <button className="aboutButton"> Sobre el negocio</button>
+        </div>
         <ProductGrid/>
       </div>
     </div>
