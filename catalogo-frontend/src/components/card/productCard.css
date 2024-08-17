@@ -5,8 +5,9 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   width: 240px;
   margin: 16px;
-  background-color: #fff;
   transition: transform 0.2s ease-in-out;
+  background-color: #7b9eb2;
+  /* fondo de card*/
 }
 
 .product-card:hover {
@@ -25,7 +26,6 @@
 
 .product-card-category {
   font-size: 0.9rem;
-  color: #888;
   margin-bottom: 4px;
 }
 
@@ -33,12 +33,10 @@
   font-size: 1.2rem;
   margin: 0;
   margin-bottom: 8px;
-  color: #333;
 }
 
 .product-card-author {
   font-size: 0.9rem;
-  color: #888;
   margin-bottom: 12px;
 }
 
@@ -50,12 +48,10 @@
 
 .product-card-reviews {
   margin-left: 8px;
-  color: #666;
   font-size: 0.9rem;
 }
 
 .product-card-price {
   font-size: 1.25rem;
   font-weight: bold;
-  color: #333;
 }

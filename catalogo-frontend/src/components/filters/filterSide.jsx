@@ -5,6 +5,7 @@ function FilterSide() {
   return (
     <div className="filter-sidebar">
       <h2>Filters</h2>
+
       <div className="filter-group">
         <label htmlFor="category">Category</label>
         <select id="category" className="filter-select">
@@ -14,6 +15,7 @@ function FilterSide() {
           <option value="category3">Category 3</option>
         </select>
       </div>
+
       <div className="filter-group">
         <label htmlFor="price">Price</label>
         <select id="price" className="filter-select">
@@ -23,6 +25,7 @@ function FilterSide() {
           <option value="100-200">$100 - $200</option>
         </select>
       </div>
+
       <div className="filter-group">
         <label htmlFor="brand">Brand</label>
         <select id="brand" className="filter-select">
@@ -32,6 +35,7 @@ function FilterSide() {
           <option value="brand3">Brand 3</option>
         </select>
       </div>
+
     </div>
   );
 }
