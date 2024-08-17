@@ -1,12 +1,13 @@
 import React from 'react';
 import ProductGrid from "@/components/card/productGrid";
 import FilterSide from "@/components/filters/filterSide";
+import './page.css';
 
 export default function Home() {
   return (
-    <div style={pageLayoutStyle}>
+    <div className="pageLayoutStyle">
       <FilterSide/>
-      <div style={productLayoutStyle}>
+      <div className="productLayoutStyle">
         <h1>Product Catalog</h1>
         <p>Browse our wide selection of products</p>
         <ProductGrid/>
@@ -15,12 +16,3 @@ export default function Home() {
   );
 }
 
-const pageLayoutStyle = {
-  display: 'flex',
-  gap: '20px',
-  padding: '20px',
-};
-
-const productLayoutStyle = {
-  flex: 1,
-};

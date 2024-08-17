@@ -1,0 +1,20 @@
+.pageLayoutStyle {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.productLayoutStyle {
+  flex: 1;
+}
+
+@media (min-width: 769px) {
+  .pageLayoutStyle {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .productLayoutStyle {
+    margin-left: 20px;
+  }
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import './filterSide.css';
 
-function FilterSidebar() {
+function FilterSide() {
   return (
     <div className="filter-sidebar">
       <h2>Filters</h2>
@@ -36,4 +36,4 @@ function FilterSidebar() {
   );
 }
 
-export default FilterSidebar;
+export default FilterSide;
