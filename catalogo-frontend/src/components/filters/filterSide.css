@@ -1,8 +1,13 @@
 .filter-sidebar {
   background-color: #8d99ae;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 12px; /* Bordes más redondeados */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.filter-sidebar:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 @media (min-width: 769px) {
@@ -24,7 +29,7 @@
 
 .filter-sidebar h2 {
   font-size: 24px;
-  margin-bottom: 15px;
+  margin-bottom: 20px; /* Mayor separación del título */
   color: #2b2d42;
   text-align: center;
   font-weight: bold;
@@ -44,27 +49,33 @@
 
 .filter-select {
   width: 100%;
-  padding: 10px;
-  border-radius: 4px;
+  padding: 12px; /* Mayor padding para más comodidad */
+  border-radius: 8px; /* Bordes más redondeados */
   border: 1px solid #2b2d42;
   background-color: #edf2f4;
   color: #2b2d42;
   font-size: 14px;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
+
 .filter-select option {
-  padding: 10px;
+  padding: 12px; /* Mayor padding para más comodidad */
   background-color: #edf2f4;
   color: #2b2d42;
 }
 
-.filter-sidebar {
-  transition: all 0.3s ease-in-out;
+.filter-input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px; /* Bordes más redondeados */
+  border: 1px solid #2b2d42;
+  background-color: #edf2f4;
+  color: #2b2d42;
+  font-size: 14px;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.filter-sidebar:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
 
 @media (min-width: 769px) {
   .filter-sidebar h2 {

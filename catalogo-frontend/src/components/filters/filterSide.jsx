@@ -5,9 +5,13 @@ function FilterSide() {
   return (
     <div className="filter-sidebar">
       <h2>Filters</h2>
+      <div className="filter-group">
+        <label htmlFor="search">Buscar</label>
+        <input type="text" id="search" className="filter-input" />
+      </div>
 
       <div className="filter-group">
-        <label htmlFor="category">Categorías</label>
+      <label htmlFor="category">Categorías</label>
         <select id="category" className="filter-select">
           <option value="all">Todos</option>
           <option value="category1">Categoria 1</option>
