@@ -4,7 +4,10 @@ import './filterSide.css';
 function FilterSide() {
   return (
     <div className="filter-sidebar">
-      <h2>Filters</h2>
+      <div className="filter-top">
+        <h2>Filters</h2>
+        <button>Buscar</button>
+      </div>
       <div className="filter-group">
         <label htmlFor="search">Buscar</label>
         <input type="text" id="search" className="filter-input" />
