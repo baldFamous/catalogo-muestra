@@ -9,10 +9,10 @@
   background-color: #7b9eb2;
   /* fondo de card*/
 }
-@media (max-width: 500px) {
+@media (max-width: 760px) {
   .product-card {
-    width: 150px;
-    height: 260px;
+    width: 130px;
+    height: 250px;
   }
   .product-card-name {
     font-size: 1rem;
