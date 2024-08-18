@@ -27,3 +27,10 @@ a {
     color-scheme: white;
   }
 }
+
+.footer{
+    background-color: #427aa1;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
