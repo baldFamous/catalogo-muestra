@@ -1,7 +1,7 @@
 .about-container {
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
 }
 
@@ -16,6 +16,7 @@
   justify-content: center;
   align-items: center;
   background-color: #f9f9f9;
+  padding: 5rem;
 }
 
 .about-text {
