@@ -5,15 +5,15 @@
   margin: 0;
 }
 
-html,
-body {
-  max-width: 100vw;
+html, body {
+  max-width: 100%;
   overflow-x: hidden;
+    margin: 0;
 }
 
 body {
-  color: #f8f7ff; /* letra de todos*/
-  background: #427aa1; /*fondo de todos*/
+  color: #212529; /* letra de todos*/
+  background: #f8f9fa; /*fondo de todos*/
 }
 
 
@@ -28,9 +28,12 @@ a {
   }
 }
 
-.footer{
-    background-color: #427aa1;
+.nav-bar {
+    color: #007bff;
+    background: #e9ecef;
     text-align: center;
-    bottom: 0;
-    width: 100%;
+    font-size: 27px;
+    display:flex;
+    justify-content: space-between;
+    padding: 10px;
 }

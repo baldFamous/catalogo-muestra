@@ -1,5 +1,6 @@
 import {Inter, Montserrat} from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/footer/footer";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -12,13 +13,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
     <body className={montserrat.className}>
+    <nav className="nav-bar">
+        <ul><a href="/">NegocioXXXX</a></ul>
+        <ul><a href="/about">Sobre nosotros</a></ul>
+    </nav>
     {children}
-    <footer className="footer">
-      <p>© 2021 Catalogo XXXX</p><br/>
-      <p>Pagina creada por <a href="mailto:bastian.dev24@gmail.com">DevBastian</a></p>
-    </footer>
+    <Footer/>
     </body>
-
     </html>
   );
 }
