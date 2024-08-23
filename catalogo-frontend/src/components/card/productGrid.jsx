@@ -1,6 +1,9 @@
-import React from 'react';
-import ProductCard from "@/components/card/productCard";
+'use client';
 
+import React, {useEffect, useState} from 'react';
+import Modal from 'react-modal';
+import ProductCard from "@/components/card/productCard";
+import ProductPreview from "@/components/card/ProductPreview";
 
 const products = [
   {
@@ -125,24 +128,36 @@ const products = [
   },
 ];
 
-
 export default function ProductGrid() {
+  const [showModal, setShowModal] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState(null);
+
+  const openModal = (product) => {
+        setSelectedProduct(product);
+        setShowModal(true);
+    };
+
+    const closeModal = () => {
+        setSelectedProduct(null);
+        setShowModal(false);
+    };
+
   return (
     <div style={gridStyle}>
       {products.map(product => (
-        <ProductCard
-          key={product.id}
-          name={product.name}
-          description={product.description}
-          price={product.price}
-          imageUrl={product.imageUrl}
-          category={product.category}
-        />
+          <div key={product.id} onClick={() => openModal(product)}>
+            <ProductCard product={product}/>
+          </div>
       ))}
+      <Modal isOpen={showModal}>
+        <button onClick={() => closeModal()}>Close Modal </button>
+        {selectedProduct && (
+            <ProductPreview product={selectedProduct} />
+        )}
+      </Modal>
     </div>
   );
 }
-
 const gridStyle = {
   display: 'flex',
   flexWrap: 'wrap',

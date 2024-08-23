@@ -9,7 +9,7 @@ export const metadata = {
   description: "Catalogo de productos de la tienda XXXX",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, modal}) {
   return (
     <html lang="es">
     <body className={montserrat.className}>
@@ -18,6 +18,7 @@ export default function RootLayout({ children }) {
         <ul><a href="/about">Sobre nosotros</a></ul>
     </nav>
     {children}
+    {modal}
     <Footer/>
     </body>
     </html>
