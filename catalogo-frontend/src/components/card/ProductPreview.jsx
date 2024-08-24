@@ -4,8 +4,8 @@ import './ProductPreview.css';
 
 export default function ProductPreview ({ product }) {
   return (
-    <div className="product-preview">
-      <div className="product-preview-info">
+    <div>
+      <div>
         <Image
           src={'/240x150.png'}
           alt={"img"}
@@ -13,9 +13,9 @@ export default function ProductPreview ({ product }) {
           height={150}
           className="product-preview-image"
         />
-        <h2 className="product-preview-name">{product.name}</h2>
-        <p className="product-preview-price">Pecio: ${product.price}</p>
-        <p className="product-preview-description">Descripción: {product.description}</p>
+        <h2>{product.name}</h2>
+        <p>Pecio: ${product.price}</p>
+        <p>Descripción: {product.description}</p>
 
       </div>
     </div>

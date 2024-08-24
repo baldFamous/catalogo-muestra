@@ -4,6 +4,7 @@ import React, {useEffect, useState} from 'react';
 import Modal from 'react-modal';
 import ProductCard from "@/components/card/productCard";
 import ProductPreview from "@/components/card/ProductPreview";
+import './ProductPreview.css';
 
 const products = [
   {
@@ -149,8 +150,8 @@ export default function ProductGrid() {
             <ProductCard product={product}/>
           </div>
       ))}
-      <Modal isOpen={showModal}>
-        <button onClick={() => closeModal()}>Close Modal </button>
+      <Modal className="modal-content" isOpen={showModal}>
+        <button className="modal-button" onClick={() => closeModal()}>Close</button>
         {selectedProduct && (
             <ProductPreview product={selectedProduct} />
         )}

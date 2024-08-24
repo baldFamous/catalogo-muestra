@@ -6,7 +6,7 @@ export default function AboutPage() {
     <div className="about-container">
       <div className="about-map">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6913.185966270139!2d-71.26207247654379!3d-29.962383938730248!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9691cb5e29ca53a5%3A0xc6cf325aa2ac1809!2sFerreter%C3%ADa%20Materiales%20El%C3%A9ctricos%20Coquimbo%20VILUZ!5e0!3m2!1sen!2scl!4v1724022684601!5m2!1sen!2scl"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8836.276445391672!2d-71.25078595177912!3d-29.91033024735126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9691ca6e79d321d7%3A0xf0b7e8b847331af7!2sUniversidad%20Santo%20Tom%C3%A1s!5e0!3m2!1ses!2scl!4v1724468029194!5m2!1ses!2scl"
           width="100%"
           height="100%"
           style={{border: 0}}
