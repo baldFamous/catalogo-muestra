@@ -20,7 +20,7 @@ const products = [
     name: 'Interruptor de Luz',
     description: 'Interruptor de luz de alta calidad',
     price: 5.50,
-    imageUrl: '/240x150.png',
+    imageUrl: '/flores.png',
     category: 'Interruptores',
   },
   {

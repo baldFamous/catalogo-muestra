@@ -1,3 +1,11 @@
+:root{
+    --bg-color-prim: #fbfbf2;
+    --bg-color-sec: #f7f7f7;
+    --text-color-prim: #333333;
+    --text-color-secc: #666666;
+    --card-color-pirm: #f7f7f7;
+    --card-color-sec: #f7f7f7;
+}
 
 * {
   box-sizing: border-box;
@@ -12,8 +20,8 @@ html, body {
 }
 
 body {
-  color: #212529; /* letra de todos*/
-  background: #f8f9fa; /*fondo de todos*/
+  color: var(--text-color-prim);
+  background: var(--bg-color-prim)
 }
 
 
@@ -30,7 +38,7 @@ a {
 
 .nav-bar {
     color: #007bff;
-    background: #e9ecef;
+    background: var(--bg-color-sec);
     text-align: center;
     font-size: 27px;
     display:flex;

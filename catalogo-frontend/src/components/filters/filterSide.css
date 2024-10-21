@@ -1,5 +1,5 @@
 .filter-sidebar {
-  background-color: #7b9eb2;
+  background-color: var(--card-color-pirm);
   padding: 20px;
   border-radius: 12px; /* Bordes más redondeados */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -42,13 +42,11 @@
 .filter-top button {
     width: 100%;
     padding: 12px;
-    border-radius: 8px; /* Bordes más redondeados */
-    background-color: #2b2d42;
-    color: #edf2f4;
+    border-radius: 8px;
+    background-color: var(--card-color-sec);
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
 
 }
 
@@ -60,7 +58,6 @@
   display: block;
   font-size: 16px;
   margin-bottom: 8px;
-  color: #2b2d42;
   font-weight: 600;
 }
 
@@ -69,8 +66,6 @@
   padding: 12px; /* Mayor padding para más comodidad */
   border-radius: 8px; /* Bordes más redondeados */
   border: 1px solid #2b2d42;
-  background-color: #edf2f4;
-  color: #2b2d42;
   font-size: 14px;
   transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -78,8 +73,6 @@
 
 .filter-select option {
   padding: 12px; /* Mayor padding para más comodidad */
-  background-color: #edf2f4;
-  color: #2b2d42;
 }
 
 .filter-input {
@@ -87,8 +80,6 @@
   padding: 12px;
   border-radius: 8px; /* Bordes más redondeados */
   border: 1px solid #2b2d42;
-  background-color: #edf2f4;
-  color: #2b2d42;
   font-size: 14px;
   transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
