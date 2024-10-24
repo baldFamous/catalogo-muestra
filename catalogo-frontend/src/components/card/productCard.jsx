@@ -7,7 +7,7 @@ function ProductCard({ product }) {
     <div className="product-card">
       <Image
         className="product-card-image"
-        src={'/240x150.png'}
+        src={product.imageUrl}
         alt={product.name}
         width={240}
         height={150}

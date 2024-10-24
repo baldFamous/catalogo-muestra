@@ -12,7 +12,7 @@ const products = [
     name: 'Cable 2mm',
     description: 'Cable de 2mm de grosor',
     price: 11.96,
-    imageUrl: '/240x150.png',
+    imageUrl: '',
     category: 'Cables',
   },
   {

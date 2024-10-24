@@ -7,10 +7,10 @@ export default function ProductPreview ({ product }) {
     <div>
       <div>
         <Image
-          src={'/240x150.png'}
+          src={product.imageUrl}
           alt={"img"}
-          width={240}
-          height={150}
+          width={300}
+          height={270}
           className="product-preview-image"
         />
         <h2>{product.name}</h2>
