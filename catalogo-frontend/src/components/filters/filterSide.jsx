@@ -1,31 +1,54 @@
-import React from 'react';
+'use client'
+import React, {useState} from 'react';
 import './filterSide.css';
 
-function FilterSide() {
+
+export default function FilterSide({ onApplyFilters }) {
+  const [category, setCategory] = useState('all');
+  const [price, setPrice] = useState('all');
+  const [brand, setBrand] = useState('all');
+
+  const handleFilter = () => {
+    const selectedFilters = {
+      category,
+      price,
+      brand,
+    };
+    onApplyFilters(selectedFilters);
+  };
+
   return (
     <div className="filter-sidebar">
       <div className="filter-top">
-        <h2>Filters</h2>
-        <button>Buscar</button>
-      </div>
-      <div className="filter-group">
-        <label htmlFor="search">Buscar</label>
-        <input type="text" id="search" className="filter-input" />
+        <h2>Filtros</h2>
+        <button onClick={handleFilter}>Aplicar Filtros</button>
       </div>
 
+      {/* Filtro de Categoría */}
       <div className="filter-group">
-      <label htmlFor="category">Categorías</label>
-        <select id="category" className="filter-select">
+        <label htmlFor="category">Categorías</label>
+        <select
+          id="category"
+          value={category}
+          onChange={e => setCategory(e.target.value)}
+          className="filter-select"
+        >
           <option value="all">Todos</option>
-          <option value="category1">Categoria 1</option>
-          <option value="category2">Categoria 2</option>
-          <option value="category3">Categoria 3</option>
+          <option value="Categoria 1">Categoria 1</option>
+          <option value="Categoria 2">Categoria 2</option>
+          <option value="Categoria 3">Categoria 3</option>
         </select>
       </div>
 
+      {/* Filtro de Precio */}
       <div className="filter-group">
         <label htmlFor="price">Precio</label>
-        <select id="price" className="filter-select">
+        <select
+          id="price"
+          value={price}
+          onChange={e => setPrice(e.target.value)}
+          className="filter-select"
+        >
           <option value="all">Todos</option>
           <option value="0-50">$0 - $50</option>
           <option value="50-100">$50 - $100</option>
@@ -33,18 +56,22 @@ function FilterSide() {
         </select>
       </div>
 
+      {/* Filtro de Marca */}
       <div className="filter-group">
         <label htmlFor="brand">Marca</label>
-        <select id="brand" className="filter-select">
+        <select
+          id="brand"
+          value={brand}
+          onChange={e => setBrand(e.target.value)}
+          className="filter-select"
+        >
           <option value="all">Todos</option>
-          <option value="brand1">Marca 1</option>
-          <option value="brand2">Marca 2</option>
-          <option value="brand3">Marca 3</option>
+          <option value="Marca 1">Marca 1</option>
+          <option value="Marca 2">Marca 2</option>
+          <option value="Marca 3">Marca 3</option>
         </select>
       </div>
-
     </div>
   );
 }
 
-export default FilterSide;

@@ -70,20 +70,9 @@
   transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-
 .filter-select option {
   padding: 12px; /* Mayor padding para más comodidad */
 }
-
-.filter-input {
-  width: 100%;
-  padding: 12px;
-  border-radius: 8px; /* Bordes más redondeados */
-  border: 1px solid #2b2d42;
-  font-size: 14px;
-  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
 
 @media (min-width: 769px) {
   .filter-sidebar h2 {

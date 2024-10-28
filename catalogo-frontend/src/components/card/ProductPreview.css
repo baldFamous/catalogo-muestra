@@ -1,3 +1,10 @@
+.gridStyle{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
 .product-preview-image {
   max-width: 100%;
   max-height: 100%;
