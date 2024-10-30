@@ -1,6 +1,7 @@
 import {Inter, Montserrat} from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/footer/footer";
+import Providers from '@/hooks/Providers';
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -13,13 +14,15 @@ export default function RootLayout({ children, modal}) {
   return (
     <html lang="es">
     <body className={montserrat.className}>
-    <nav className="nav-bar">
-        <ul><a href="/">Negocio</a></ul>
-        {/* <ul><a href="/about">Sobre nosotros</a></ul> */}
-    </nav>
-    {children}
-    {modal}
-    <Footer/>
+    <Providers>
+      <nav className="nav-bar">
+          <ul><a href="/">Negocio</a></ul>
+          {/* <ul><a href="/about">Sobre nosotros</a></ul> */}
+      </nav>
+        {children}
+        {modal}
+      <Footer/>
+    </Providers>
     </body>
     </html>
   );

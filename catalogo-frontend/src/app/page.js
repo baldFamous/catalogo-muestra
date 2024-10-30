@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import ProductGrid from "@/components/card/productGrid";
 import FilterSide from "@/components/filters/filterSide";
 import './page.css';
+import CartButton from "@/components/cart/CartButton";
 
 
 export default function Home() {
@@ -125,6 +126,7 @@ export default function Home() {
   return (
     <div className="pageLayoutStyle">
       <FilterSide onApplyFilters={handleFilter} />
+      <CartButton/>
       <div className="productLayoutStyle">
         <ProductGrid products={filteredProducts} />
       </div>
