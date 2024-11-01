@@ -6,6 +6,7 @@ import Modal from 'react-modal';
 export default function Cart({ isOpen, onRequestClose }) {
   const { cartItems, removeFromCart, updateQuantity, total, clearCart } = useCart();
 
+
   const handleQuantityChange = (productId, quantity) => {
     if (quantity < 1) return;
     updateQuantity(productId, quantity);
@@ -26,11 +27,14 @@ export default function Cart({ isOpen, onRequestClose }) {
           maxWidth: '600px',
           width: '90%',
           padding: '20px',
+          maxHeight: '80vh', // Limita la altura máxima del modal
+          overflowY: 'auto',  // Permite el scroll vertical dentro del modal
+          overflow: 'hidden', // Oculta el scroll del body cuando el modal está abierto
         },
       }}
     >
       <h2>Carrito de Compras</h2>
-      <button onClick={onRequestClose} style={{ float: 'right', padding: '5px 10px' }}>Cerrar</button>
+      <button onClick={onRequestClose} style={{ float: 'right', padding: '5px 10px'}}>Cerrar</button><br/>
       {cartItems.length === 0 ? (
         <p>Tu carrito está vacío.</p>
       ) : (
