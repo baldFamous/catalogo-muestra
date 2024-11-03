@@ -20,7 +20,7 @@ export default function CartButton() {
 
   return (
     <>
-      <button onClick={handleOpenCart} style={{ position: 'fixed', top: '20px', right: '20px', padding: '10px 15px', cursor: 'pointer' }}>
+      <button onClick={handleOpenCart} style={{ top: '20px', right: '20px', padding: '10px 15px', cursor: 'pointer' }}>
         🛒 Carrito ({totalItems})
       </button>
       <Cart isOpen={isCartOpen} onRequestClose={handleCloseCart} />

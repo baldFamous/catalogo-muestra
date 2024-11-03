@@ -126,7 +126,6 @@ export default function Home() {
   return (
     <div className="pageLayoutStyle">
       <FilterSide onApplyFilters={handleFilter} />
-      <CartButton/>
       <div className="productLayoutStyle">
         <ProductGrid products={filteredProducts} />
       </div>

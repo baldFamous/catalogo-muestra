@@ -2,6 +2,7 @@ import {Inter, Montserrat} from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/footer/footer";
 import Providers from '@/hooks/Providers';
+import CartButton from "@/components/cart/CartButton";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({ children, modal}) {
       <nav className="nav-bar">
           <ul><a href="/">Negocio</a></ul>
           {/* <ul><a href="/about">Sobre nosotros</a></ul> */}
+          <ul><CartButton/></ul>
       </nav>
         {children}
         {modal}
