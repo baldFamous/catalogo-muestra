@@ -1,11 +1,16 @@
+'use client';
 import Image from 'next/image';
 import React from 'react';
 import './ProductPreview.css';
 import { useCart } from '@/hooks/CartContext';
+import {toast} from "react-toastify";
 
 
 export default function ProductPreview ({ product }) {
     const { addToCart } = useCart();
+    const notify = () => toast.success('Agregado al carrito', {
+});
+
   return (
     <div>
       <div>
@@ -20,10 +25,9 @@ export default function ProductPreview ({ product }) {
         <p>Pecio: ${product.price}</p>
         <p>Descripción: {product.description}</p>
 
-        <button onClick={() => addToCart(product)} style={{ marginTop: '10px', padding: '8px 16px', cursor: 'pointer' }}>
+        <button onClick={() => addToCart(product, notify())} style={{ marginTop: '10px', padding: '8px 16px', cursor: 'pointer' }}>
         Añadir al Carrito
-      </button>
-
+        </button>
       </div>
     </div>
   );

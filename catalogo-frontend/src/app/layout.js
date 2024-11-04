@@ -3,6 +3,9 @@ import "./globals.css";
 import Footer from "@/components/footer/footer";
 import Providers from '@/hooks/Providers';
 import CartButton from "@/components/cart/CartButton";
+import {ToastContainer} from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -24,6 +27,18 @@ export default function RootLayout({ children, modal}) {
         {children}
         {modal}
       <Footer/>
+      <ToastContainer
+            position="bottom-center"
+            autoClose={550}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="colored" // Tema de la notificación
+          />
     </Providers>
     </body>
     </html>
